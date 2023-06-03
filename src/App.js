@@ -5,10 +5,11 @@ import rgbHex from 'rgb-hex';
 
 function App() {
   const [color, setColor] = useState('#FF0000');
-  const [input, setInput] = useState('Jhon Doe');
+  const [input, setInput] = useState('Vijay Kumar V');
+  const [inputColor, setInputColor] = useState('#FFFFFF'); // New state variable for input field color
 
   function handleClick(e) {
-    let id = e.target.id
+    let id = e.target.id;
     let a = document.getElementsByClassName('cards');
     for (let i = 0; i < 9; i++) {
       if (id === a[i].id) {
@@ -20,11 +21,13 @@ function App() {
       }
     }
     let d = '#' + rgbHex(e.target.style.backgroundColor);
-    setColor(d)
+    setColor(d);
+    setInputColor(d); // Update input field color
 
   }
+
   function handleChange(e) {
-    setInput(e.target.value)
+    setInput(e.target.value);
   }
 
 
@@ -51,15 +54,15 @@ function App() {
         </div>
         <div className='sSecond'>
           <p className='line1' >Design Card</p>
-          
+
           <p className='line3' >Your selected colour is <b>{color}</b></p>
           <p className='line4' >Name</p>
-          <input className='input1' name='name' value={input} onChange={handleChange} ></input>
+          <input className='input1' name='name' value={input} onChange={handleChange} style={{ backgroundColor: inputColor }}></input>
+
         </div>
       </div>
     </div>
   )
 }
-
 
 export default App;
