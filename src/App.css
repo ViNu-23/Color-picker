@@ -6,7 +6,7 @@
   display: flex;
   direction: rows;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100px;
   width: 1025px;
   border-radius: full;
