@@ -5,7 +5,7 @@
   display: flex;
   direction: rows;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100px;
   width: 1050px;
   
