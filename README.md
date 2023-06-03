@@ -1,2 +1,2 @@
 # Color-picker Using React
-Netlify Demo:https://incredible-rolypoly-f2c1f1.netlify.app/
+Netlify Demo: https://thunderous-custard-c689cd.netlify.app/
