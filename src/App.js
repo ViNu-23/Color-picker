@@ -5,7 +5,7 @@ import rgbHex from 'rgb-hex';
 
 function App() {
   const [color, setColor] = useState('#FF0000');
-  const [input, setInput] = useState('Vijay Kumar V');
+  const [input, setInput] = useState('Vijay Kumar');
   const [inputColor, setInputColor] = useState('#FFFFFF'); // New state variable for input field color
 
   function handleClick(e) {
